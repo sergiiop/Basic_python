@@ -80,3 +80,159 @@
   - Las variables se pueden reescribir
   - Las variables tienen reglas que son:
     - El identificador o nombre de variable no puede comenzar con un número y debe estar en minúsculas. Las palabras dentro del mismo se separan con un guión bajo
+
+- Tipos de datos
+
+  - En python todo es un objeto
+  - Los más sencillos son, los enteros (int), Números punto flotante(float), texto o cadenas de caracteres (string), Booleanos (true o false)
+  - Trabajando con las variables
+
+    ```python
+    nombre = "Sergio"
+    nombre2 = 'Luis'
+
+    nombre + nombre2 => "SergioLuis" // Concatenacion la union de dos o más strings
+    nombre + " " + nombre2 => "Sergio Luis"
+    nombre * 4 => "SergioSergioSergioSergio" // Podemos multiplicar el string
+
+    numero_decimal = 3.4 // Para los numeros decimales siempre se utiliza el .
+
+    es_estudiante = True //
+
+    ```
+
+- Operadores lógicos y de comparacion
+
+  - Operadores logicos
+    - and - para que se pueda cumplir la condicion todas las variables comparadas tienen que ser verdaderas
+    - or - para que se pueda cumplir la condicion almenos una de las variables comparadas tiene que ser verdaderas, para que la condicion de falso todas las variables comparadas tienen que ser false
+    - not - invierte el valor de una variable, es decir si una variable es true y colocamos not la variable cambiara a false
+  - Operadores de comparacion
+
+    - == - igualdad, nos valida que el contenido de las variables sean iguales
+
+      ```python
+      numero1 = 5
+      numero2 = 5
+
+      numero1 == numero 2 => True
+      ```
+
+    - ≠ - distinto, nos valida que el contenido de las variables no sean iguales
+    - > mayor, compara si una variale es mayor que el otro
+    - < menor,compara si una variale es menor que el otro
+    - ⇒ mayor o igual
+    - ≤ menor o igual
+
+- Condicionales
+
+  - La regla de identacion seguido de if es de 4 espacios
+  - If es una condicion que nos dice en pocas palabras, Sí la condicion se cumple haz algo y Si no haz otra cosa
+
+    ```python
+    if edad >= 18:
+    		print('Eres mayor de edad')
+    else:
+    		print('Eres menor de edad')
+    ```
+
+    Esto se leé de la siguiente forma: Si tu edad es mayor o igual a 18 eres mayor de edad, si no eres menor de edad.
+
+  - elif significa si no y va entre el if y el else
+  - else si no, que significa, si ninguno de los casos anteriores se cumplieron ejecuta lo que esta dentro
+
+- Funciones
+  - Para declarar una funcion se utiliza la palabra reservada "def" seguido del nombre de la funcion con dos parentesis y en caso de que la funcion reciba parametros se los ponemos dentro
+  - Las funciones pueden devolver datos en caso de que los necesitemos y para esto se utiliza la palabra reservada "return" seguido del nombre de la variable que queremos retornar
+- Metodos
+
+  - Un metodo es una funcion especial para un tipo de dato en particular
+  - Convertir Datos a un tipo diferente
+
+    - input() para pedirle al usuario que introduzca datos.
+
+      ```python
+      numero1 = input("Escribe un numero") // 2
+      print(numero1)
+      => '2'
+      ```
+
+    - int() convierte datos o variables dentro de los parentecis en tipo entero
+
+      ```python
+      numero1 = int(numero1) // pasamos la variable que tiene nuestro string
+      print(numero1)
+      => 2
+      ```
+
+    - str() nos convierte datos o variables dentro de los parentecis en tipo string
+
+      ```python
+      numero_decimal = 4.5
+      str(numero_decimal)
+      => '4.5'
+      ```
+
+    - float() nos convierte datos o variables en tipo float
+    - round() recibe dos parametros el dato o variable y el numero de decimales que queremos EJ: round(5.76543, 2) ⇒ 5.76
+
+  - Transformar Cadenas de caracteres
+    - upper() Transforma todos los caracteres en mayusculas
+    - capitalize() Transforma el primer caracter en mayusculas
+    - strip() Elimina los espacios que estan al principio o al final de la cadena
+    - lower() transforma la cadena de caracteres a minisculas
+    - replace('in','out') este metodo recibe dos parametros el primero es el dato que sera reemplazado por el segundo
+    - para poder acceder a los indices de una cadena se hace con [ ]
+    - len() nos trae cuantos caracteres tiene la cadena
+
+- slices
+
+  - Podemos dividir cadenas de texto utilizando slices de la siguiente forma
+
+    Se accede a los indices, en los corchetes colocamos el indice desde donde queremos dividir la cadena colocamos dos puntos y el indice hasta donde queremos dividir
+
+    ```python
+    nombre[1:3]
+    # Cuando no colocamos el primer indice
+    nombre[:3]
+    # Quiere decir que empieza a dividir desde el principio de la cadena
+    nombre[3:]
+    # y es igual para el caso contrario
+    ```
+
+    A esto tambien le podemos agregar un tercer valor que es el numero de saltos que va a dar para dividir la cadena es decir si colocamos dos va a ir de dos en dos
+
+- Punto de entrada y funcion principal
+
+  - En python es una buena practica tener una funcion principal que es la que nos va a correr el programa al principio, un estandar para definir esta funcion es:
+
+    ```python
+    def run():
+    ```
+
+  - Punto de entrada en python se hace de la siguiente forma
+
+    ```python
+    if __name__ == '__main__':
+    		pass
+    ```
+
+    Esto quiere decir que python va a correr todo lo que este dentro de este bloque de codigo
+
+  - Una buena practica en python es siempre dejar dos espacios entre funciones
+
+- Bucles en Python
+
+  Un bucle es algo que podemos hacer iterar una cantidad determinada de veces
+
+  - while
+
+    While significa Mientras qué y lo que hace es que mientras que la condicion en la exprecion se cumpla ejecutara el bloque de codigo
+
+- Constantes en Python
+
+  - Las constates son lo opuesto a las variables es decir, que no va a variar y que siempre estara en un numero fijo, en python estas variables se declaran colocando su nombre todo en mayuscula
+
+    ```python
+    LIMITE = 1000;
+    ```
