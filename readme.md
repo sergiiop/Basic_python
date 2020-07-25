@@ -194,7 +194,9 @@
   - para poder acceder a los indices de una cadena se hace con [ ]
   - len() nos trae cuantos caracteres tiene la cadena
 - round(dato, numero de decimales) recibe dos parametros el dato o variable y el numero de decimales que queremos EJ: round(5.76543, 2) ⇒ 5.76
-- range(valor inicial, valor final) la funcion range lo que hace es establecer un rango de numeros con los valores que le establecemos EJ: range(1,5) ⇒ [1, 2, 3, 4]. Como se ve en el ejemplo el valor final no es incluyente
+- range(valor inicial, valor final, incremento) la funcion range devuelve una secuencia de numeros, comenzando desde el valor inicial y se encrementa en 1(por defecto), sin embargo, es posible especificar el valor de incremento agregando un tercer parámetro y termina en el valor final que le establezcamos.
+
+**EJ:** range(1,5) ⇒ [1, 2, 3, 4]. Como se ve en el ejemplo el valor final no es incluyente
 
 ## slices
 
@@ -239,6 +241,22 @@ Un bucle es algo que podemos hacer iterar una cantidad determinada de veces
 - while
 
   While significa Mientras qué y lo que hace es que mientras que la condicion en la exprecion se cumpla ejecutara el bloque de codigo
+
+  ```python
+    while expresión:
+  s
+  ```
+
+- for
+
+  Un bucle for se usa para iterar sobre una secuencia(que es una lista, una tupla, un diccionario, un cojunto o una cadena), podemos ejecutar un cojunto de declaraciones, una vez para cada elemento de una lista, tupla, etc.
+
+  ```python
+  for target_list in expression_list:
+  pass
+  ```
+
+  Tambien podemos recorrer una cadena(string) con un for, esto quiere decir que vamos a tomar una cadena de caracteres y vamos a ir por cada parte unica o indice a la vez dentro de un ciclo
 
 ## Constantes en Python
 
