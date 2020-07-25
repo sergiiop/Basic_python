@@ -198,7 +198,7 @@
 
 **EJ:** range(1,5) ⇒ [1, 2, 3, 4]. Como se ve en el ejemplo el valor final no es incluyente
 
-## slices
+## Slices
 
 - Podemos dividir cadenas de texto utilizando slices de la siguiente forma
 
@@ -257,6 +257,47 @@ Un bucle es algo que podemos hacer iterar una cantidad determinada de veces
   ```
 
   Tambien podemos recorrer una cadena(string) con un for, esto quiere decir que vamos a tomar una cadena de caracteres y vamos a ir por cada parte unica o indice a la vez dentro de un ciclo
+
+  - **Interrumpiendo ciclos con break y continue**
+
+    - **break** simplemente termina el bucle actual y continua con la ejecucíon de la siguiente instrucción, por ejemplo:
+
+      ```python
+      def run():
+          for i in range(10000):
+              print(i)
+              if i == 5678:
+                  break
+      ```
+
+      En el anterior ejemplo declaramos un bucle **for** y lo hacemos iterar desde el 0 hasta 9999, imprimiendo cada paso que de **i**, cuando **i** llegue a 5678 el bucle se terminara
+
+    - **break** con while
+
+      ```python
+      def run():
+      		LIMITE = 10
+          contador = 0
+          while contador < LIMITE:
+              print(contador)
+              contador += 1
+              if contador == 5:
+                  break
+      ```
+
+      En este ejemplo definimos un **Limite**, un **contador** y decimos, mientras que el **contador** sea menor que el **limite** imprime el contador y despues sumale 1, si contador es igual a 5 termina de ejecutarte.
+
+    - **continue** Cuando aparece un continue en python este regresa al comienzo del bucle, ignorando todos los estamentos que quedan en la iteración del bucle e inicia la siguiente iteración, **continue** se puede utilizar tanto en bucles **for** como en bucles **while.** Ejemplo de **continue** en bucle **for**
+
+      ```python
+      def run():
+          for contador in range(1000):
+              if contador % 2 != 0:
+                  continue
+              print(contador)
+      ```
+
+      En este ejemplo declaramos un ciclo for con un contador y que este itere en un rango de 0 a 9999, si contador % 2 ≠ 0, es decir si el contador es impar ejecuta continue y al final imprime contador. Lo que nos retornara el programa son todos los numeros pares de 0 a 9999 por que **continue** nunca dejara que se impriman los impares
 
 ## Constantes en Python
 
