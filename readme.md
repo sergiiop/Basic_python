@@ -116,7 +116,7 @@
   - not - invierte el valor de una variable, es decir si una variable es true y colocamos not la variable cambiara a false
 - Operadores de comparacion
 
-  - == - igualdad, nos valida que el contenido de las variables sean iguales
+  - (==) igualdad, nos valida que el contenido de las variables sean iguales
 
     ```python
     numero1 = 5
@@ -125,11 +125,11 @@
     numero1 == numero2 #=> True
     ```
 
-  - ≠ - distinto, nos valida que el contenido de las variables no sean iguales
-  - > mayor, compara si una variale es mayor que el otro
-  - < menor,compara si una variale es menor que el otro
-  - ⇒ mayor o igual
-  - ≤ menor o igual
+  - (≠) distinto, nos valida que el contenido de las variables no sean iguales
+  - (>) mayor, compara si una variale es mayor que el otro
+  - (<) menor,compara si una variale es menor que el otro
+  - (⇒) mayor o igual
+  - (≤) menor o igual
 
 ## Condicionales
 
