@@ -68,12 +68,11 @@
 - Para declarar una variable en python lo hacemos de la siguiente manera:
 
   ```python
-  // primero colocamos el nombre de la variable "identificador" seguido de un
-  igual (=) que significa asignación
+  ## primero colocamos el nombre de la variable "identificador" seguido de un
+  ##igual (=) que significa asignación
 
   numero = 3
-  print(numero)
-  => 3
+  print(numero) # => 3
   ```
 
 - Las variables las podemos operar, lo que entendera el lenguaje es que tiene que operar el contenido de la variable, tambien podemos guardar una variable dentro de otra por ejemplo, si guardamos dos numeros en dos distintas variables y luego hacemos alguna operacion matematica, podemos guardar el resultado de esa operacion en una variable
@@ -82,7 +81,7 @@
   	numero1 = 2
   	numero2 = 3
   	numero_resultado = numero1 + numero2
-  	print(numero_resultado) => 5
+  	print(numero_resultado) # => 5
   ```
 
 - Las variables se pueden reescribir
@@ -99,13 +98,13 @@
   nombre = "Sergio"
   nombre2 = 'Luis'
 
-  nombre + nombre2 => "SergioLuis" // Concatenacion la union de dos o más strings
-  nombre + " " + nombre2 => "Sergio Luis"
-  nombre * 4 => "SergioSergioSergioSergio" // Podemos multiplicar el string
+  nombre + nombre2 # => "SergioLuis" # Concatenacion la union de dos o más strings
+  nombre + " " + nombre2 # => "Sergio Luis"
+  nombre * 4 # => "SergioSergioSergioSergio" # Podemos multiplicar el string
 
-  numero_decimal = 3.4 // Para los numeros decimales siempre se utiliza el .
+  numero_decimal = 3.4 # Para los numeros decimales siempre se utiliza el punt (.)
 
-  es_estudiante = True //
+  es_estudiante = True
 
   ```
 
@@ -123,7 +122,7 @@
     numero1 = 5
     numero2 = 5
 
-    numero1 == numero 2 => True
+    numero1 == numero2 #=> True
     ```
 
   - ≠ - distinto, nos valida que el contenido de las variables no sean iguales
@@ -162,17 +161,17 @@
   - input() para pedirle al usuario que introduzca datos.
 
     ```python
-    numero1 = input("Escribe un numero") // 2
+    numero1 = input("Escribe un numero") # 2
     print(numero1)
-    => '2'
+    #=> '2'
     ```
 
   - int() convierte datos o variables dentro de los parentecis en tipo entero
 
     ```python
-    numero1 = int(numero1) // pasamos la variable que tiene nuestro string
+    numero1 = int(numero1) # pasamos la variable que tiene nuestro string
     print(numero1)
-    => 2
+    # => 2
     ```
 
   - str() nos convierte datos o variables dentro de los parentecis en tipo string
@@ -180,7 +179,7 @@
     ```python
     numero_decimal = 4.5
     str(numero_decimal)
-    => '4.5'
+    # => '4.5'
     ```
 
   - float() nos convierte datos o variables en tipo float
@@ -243,8 +242,8 @@ Un bucle es algo que podemos hacer iterar una cantidad determinada de veces
   While significa Mientras qué y lo que hace es que mientras que la condicion en la exprecion se cumpla ejecutara el bloque de codigo
 
   ```python
-    while expresión:
-  s
+  while expresión:
+      pass
   ```
 
 - for
@@ -253,7 +252,7 @@ Un bucle es algo que podemos hacer iterar una cantidad determinada de veces
 
   ```python
   for target_list in expression_list:
-  pass
+      pass
   ```
 
   Tambien podemos recorrer una cadena(string) con un for, esto quiere decir que vamos a tomar una cadena de caracteres y vamos a ir por cada parte unica o indice a la vez dentro de un ciclo
