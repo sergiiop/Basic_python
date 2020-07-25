@@ -275,7 +275,7 @@ Un bucle es algo que podemos hacer iterar una cantidad determinada de veces
 
       ```python
       def run():
-      		LIMITE = 10
+          LIMITE = 10
           contador = 0
           while contador < LIMITE:
               print(contador)
