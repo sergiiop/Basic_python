@@ -305,3 +305,22 @@ Un bucle es algo que podemos hacer iterar una cantidad determinada de veces
   ```python
   LIMITE = 1000;
   ```
+
+## Que es un Modulo en Python?
+
+    - Un **Modulo** es un paquete de codigo escrito por las personas que escribieron python que tenemos disponible para ejecutar funciones ya escritas
+    - Uno de esos modulos es: **random** y para hacer uso de este tenemos que importarlo en nuestro archivo, de la siguiente manera:
+
+        ```python
+        import random
+        ```
+
+        el modulo **random** contiene funciones para trabajar con la aleatoriedad con python, un caso de uso podria ser generar un numero aleatorio entre 1 y 100
+
+        Para acceder a las funciones que tiene el modulo tenemos que llamar al modulo seguido de un punto, algunos editores de texto como el caso de visual code ayudan con el autocompletado y muestran los diferentes funciones que contiene el modulo, un ejemplo seria:
+
+        ```python
+        numero_aleatorio = random.randint(1,100)
+        ```
+
+        la funcion **randint** pertenece al modulo **random** y lo que hace es generar un numero entero desde un valor inicial, hasta un valor final como se puede ver en el anterior ejemplo.
