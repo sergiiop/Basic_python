@@ -324,3 +324,152 @@ Un bucle es algo que podemos hacer iterar una cantidad determinada de veces
   ```
 
   la funcion **randint** pertenece al modulo **random** y lo que hace es generar un numero entero desde un valor inicial, hasta un valor final como se puede ver en el anterior ejemplo.
+
+## Estructuras de datos en Python
+
+- Listas
+
+  - Las listas son una estructura de datos, y una estructura de datos son formas que nos brindan los lenguajes de programación, las listas son las más intuitivas y nos permiten guardar varios tipos de valores dentro de una misma variable. Las listas en otros lenguajes son parecidas a los **Array**
+
+  - La forma en la que podemos guardar varios datos en una variable es la siguiente:
+
+  ```python
+  numeros = [1,3,6,8,9,24,30]
+  print(numeros)
+  # =>[1,3,6,8,9,24,30]
+  objetos = ['Hola', 3, 4.5 , True]
+  print(objetos)
+  # => ['Hola', 3, 4.5 , True]
+  ```
+
+  La forma en que podemos acceder a los elementos de una lista es con los indices, y para recordar los indices en programación siempre empiezan en la posicion 0, es decir, si queremos acceder a un tercer dato de una lista tendriamos que solicitar el indice 2 de la lista
+
+  ```python
+  objetos[2]
+  # => 4.5
+  objetos[0]
+  # => 'Hola'
+  objetos[1]
+  # => 3
+  ```
+
+  - Las **listas** cuentan con una serie de metodos que nos permiten manipularlas
+
+    **.append()**, este metodo inserta un nuevo elemento al final de la lista, este se lo tenemos que pasar como parametro
+
+    ```python
+    objetos.append(False)
+    print(objetos)
+    # => ['Hola', 3, 4.5 , True, False]
+    ```
+
+    **.pop()**, este metodo elimina un elemento de la lista por su indice
+
+  ````python
+  objetos.pop(2)
+  print(objetos)
+  # => ['Hola', 3, True, False]
+
+  **.sort()**, este metodo ordena la lista de menor a mayor, este modifica la lista i
+  ```python
+  A = [4, 1,9]
+  A.sort() # => [1,4,9]
+  ````
+
+  **sorted()**, este metodo recibe una lista y retorna otra ordenada de menor a mayor este metodo **No** modifica la lista inicial, por lo cual si queremos guardar el resultado tendremos que guardarlo en una nueva variable
+
+  ```python
+  A = [4, 1,9]
+  B = sorted(A) # => [1,4,9]
+
+  ```
+
+  **.remove()**, este metodo recibe un valor de la lista y este lo elimina
+
+  ```python
+  A = [4, 1,9]
+  A.remove(1) # => [4,9]
+  ```
+
+  **.range()** creacion de listas en un rango determinado
+
+  ```python
+  a = list(range(0,10)) # crea una lista desde 0 hasta 10 de 1 uno en 1
+  ```
+
+  **len()** recibe una lista y devuelve el tamaño de esta
+
+  ```python
+  a = [4, 1,9]
+  len(a) # => 3
+  ```
+
+  - Las **listas** tambien pueden ser recorridas elemento a elemento con un ciclo for, de la misma forma que hacemos con los strings
+  - De igual forma podemos manipular listas con slices, concatenacion, multiplicar la lista de la misma manera que con los strings
+
+  - Tuplas
+
+    - Las **tuplas** son un tipo de dato que se parecen a las listas, la diferencia es que las listas son dinamicas y las **tuplas** son estaticos, es decir, son inmutables no se puede modificar sus elementos
+    - Para definir una **tupla** se hace con parentecis () de la siguiente forma
+
+      ```python
+      tupla = (1,2,3,4,5)
+      ```
+
+    - Las **tuplas** en python son consideradas la estructura de datos más rapida
+    - Una ventaja de las **tuplas** sobre las **listas** es a la hora de recorrer ciclos for, estas iteracciones se hacen más rapido
+
+  - Diccionarios
+
+    - **Los Diccionarios** es una estructura de datos de llaves y valores
+    - La forma en que se definen los **diccionarios** es encerrando sus elementos dentro de llaves { } de la siguiente forma
+
+      ```python
+      mi_diccionario = {
+      		#Los elementos tienen que ir separados por coma
+      		'llave1': 1,
+      		'llave2': 2,
+      		'llave3': 3,
+      }
+      print(mi_diccionario)
+      # => {'llave1': 1,'llave2': 2,'llave3': 3}
+      ```
+
+      - Para acceder a los elementos de un **diccionario,** llamamos a la variable del diccionario y entre corchetes [ ] pasamos el nombre de la llave del elemento que necesitamos
+
+        ```python
+        print(mi_diccionario['llave1']) #1
+        print(mi_diccionario['llave2']) #2
+        print(mi_diccionario['llave3']) #3
+        ```
+
+      - Los **diccionarios** tambien cuentan con metodos uno de ellos es **.keys()**, este metodo devuelve las llaves del diccionario, otro es el metodo **.values()** y lo que hace es devolver los valores de las llaves. **.items()** este metodo devuelve los dos valores, las llaves y el valor de la llave
+      - Con los **diccionarios** tambien podemos recorrer ciclos for
+
+        ```python
+        poblacion_paises = {
+                'Argentina': 4493872,
+                'Brazil': 1023102312,
+                'Colombia': 50372424,
+        }
+
+        for pais in poblacion_paises.keys():
+                print(pais)
+        # Argentina
+        # Brasil
+        # Colombia
+
+        for poblacion in poblacion_paises.values():
+                print(pais)
+        # 4493872
+        # 1023102312
+        # 50372424
+
+        # Como el metodo nos devuelve dos elementos tenemos que agregar un segundo
+        # elemento iterador en el for para no tener errores
+        for pais,poblacion in poblacion_paises.items():
+                print(pais + ' tiene ' + str(poblacion) + ' habitantes')
+        # Argentina tiene 4493872 habitantes
+        # Brasil tiene 1023102312 habitantes
+        # Colombia tiene 50372424 habitantes
+        ```
