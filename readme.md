@@ -9,7 +9,7 @@
 ## ¿Que es un Algoritmo?
 
 - Un algoritmo es una serie de pasos ordenados para resolver un problema
-- Tiene que tener un Inicio y Fin claro, es decir un Algoritmo es Finito
+- Tiene que tener un Inicio y Fin claro, es decir un Algoritmo es Finito y ordenado
 - No es Ambiguo
 
 ## La mejor herramienta: La consola
